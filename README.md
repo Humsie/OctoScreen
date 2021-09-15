@@ -155,6 +155,8 @@ The basic configuration is handled via environment variables, if you are using t
 
 - `DISPLAY_CURSOR` - To display the cursor, add `DISPLAY_CURSOR=true` to your config file.  In order to display the cursor, you will also need to edit `/lib/systemd/system/octoscreen.service` and remove `-nocursor`
 
+- `OCTOSCREEN_AUTO_RECONNECT` - Controls wether OctoScreen automatically triggers a Connect attempt when it detects the Printer is not connected.  Defaults to `TRUE`.  Dissabling this feature releases control of Printer connection to OctoPrint, and may provide better compatibility when flashing or interfacing with the printer controller via an external device.
+
 
 
 ------------
